@@ -6,4 +6,4 @@ Pude agregar los ingresos y sumarlos para que se vea reflejado el total.
 
 Pude agregar los gastos y sumarlos para que se vea reflejado el total.
 
-Aún no pude relizar el balace. 
+Aún no pude relizar el balance. 
