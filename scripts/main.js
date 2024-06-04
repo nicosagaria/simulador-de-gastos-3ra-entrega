@@ -37,9 +37,9 @@ function agregarIngreso(){
         listaIngresos.push(ingreso)
 
           // Actualizar el total de montos
-          const totalMonto = listaIngresos.reduce((total, ingreso) => total + ingreso.monto, 0);
-          const totalMontoElement = document.getElementById("total-monto");
-          totalMontoElement.textContent = `Total: ${totalMonto.toFixed(2)}`;
+          const totalMontoIngreso = listaIngresos.reduce((total, ingreso) => total + ingreso.monto, 0);
+          const totalMontoElement = document.getElementById("total-monto-ingresos");
+          totalMontoElement.textContent = `Total: ${totalMontoIngreso.toFixed(2)}`;
 
 
         localStorage.setItem("almacenar", JSON.stringify(listaIngresos))
@@ -118,9 +118,9 @@ function agregarGasto(){
         listaGastos.push(gasto)
         
         // Actualizar el total de montos
-        const totalMonto = listaGastos.reduce((total, gasto) => total + gasto.monto, 0);
+        const totalMontoGastos = listaGastos.reduce((total, gasto) => total + gasto.monto, 0);
         const totalMontoElement = document.getElementById("total-monto-gasto");
-        totalMontoElement.textContent = `Total: ${totalMonto.toFixed(2)}`;
+        totalMontoElement.textContent = `Total: ${totalMontoGastos.toFixed(2)}`;
 
         localStorage.setItem("almacenar", JSON.stringify(listaGastos))
         
@@ -173,3 +173,5 @@ btnAgregarIngreso.addEventListener("click",agregarIngreso)
 let btnAgregarGasto = document.getElementById("agregarGasto")
 
 btnAgregarGasto.addEventListener("click",agregarGasto)
+
+
